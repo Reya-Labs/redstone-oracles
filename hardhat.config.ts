@@ -32,7 +32,7 @@ const config: HardhatUserConfig = {
       default: 0,
     },
   },
-  defaultNetwork: "hardhat",
+  defaultNetwork: "reyaCronos",
 
   networks: {
     hardhat: {
@@ -66,7 +66,11 @@ const config: HardhatUserConfig = {
       chainId: 4202,
       url: `https://rpc.sepolia-api.lisk.com`,
     },
- 
+    reyaCronos: {
+      accounts: PK ? [PK] : [],
+      chainId: 89346161,
+      url: `https://rpc.reya-cronos.gelato.digital`,
+    },
   },
 
   solidity: {
@@ -107,7 +111,7 @@ const config: HardhatUserConfig = {
       },
       {
         network: "reyaCronos",
-        chainId: 1729,
+        chainId: 89346161,
         urls: {
           apiURL: "https://reya-cronos.blockscout.com/api",
           browserURL: "https://reya-cronos.blockscout.com"

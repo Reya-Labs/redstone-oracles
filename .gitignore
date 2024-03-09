@@ -36,3 +36,5 @@ dist
 
 # Web3 functions
 .tmp
+
+.idea/
