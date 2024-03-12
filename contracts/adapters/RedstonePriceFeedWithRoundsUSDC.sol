@@ -9,6 +9,11 @@ contract RedstonePriceFeedWithRoundsUSDC is MergedPriceFeedAdapterWithRounds {
 
     error UpdaterNotAuthorised(address signer);
 
+    // By default, we have 3 seconds between the updates
+    // But, we need to set it to 0 to avoid conflicts between users on reya
+    function getMinIntervalBetweenUpdates() public view virtual override returns (uint256) {
+        return 0;
+    }
 
     function getDataFeedId() public pure  override returns (bytes32) {
         return USDC_ID;
