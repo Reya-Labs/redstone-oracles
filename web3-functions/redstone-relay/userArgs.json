@@ -1,6 +1,0 @@
-{ 
-"priceFeed":"ETH",
-"priceFeedAdapterAddress":"0x6F9A3AC224025B0A9E7b7F47dcb1DF7872e2fA75",
-"intervalInMin": "60",
-"deviationThreshold":"2"
-}
