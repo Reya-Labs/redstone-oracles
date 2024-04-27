@@ -23,7 +23,7 @@ const config: HardhatUserConfig = {
   w3f: {
     rootDir: "./web3-functions",
     debug: false,
-    networks: ["hardhat", "reyaCronos", "unreal", "reyaNetworkk"] //(multiChainProvider) injects provider for these networks
+    networks: ["hardhat", "reyaCronos", "unreal", "reyaNetwork"] //(multiChainProvider) injects provider for these networks
   },
   // hardhat-deploy
   namedAccounts: {
