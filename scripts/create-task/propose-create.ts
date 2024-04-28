@@ -47,12 +47,12 @@ async function main() {
       web3FunctionArgs: {
         priceFeeds: ["ETH", "BTC", "WBTC", "USDC", "USDT", "DAI"],
         priceFeedAdapterAddresses: [
-          "0xFb49001366fC0b23B4892909426bd3796958b6D4",
-          "0x34e8C1929Abb778358202Ea061eaE6f8a88dcA6A",
-          "0x1Db3251c664De5990A31518fecA26189d39E0191",
-          "0xBf356E1d7D083E9439A50D38430713BeE7F05a4c",
-          "0xB3315A412c0DD59Ff4F040106FC1dE43e9528947",
-          "0x201a385ce2a2fcDFd190DaB925B3AB1F9E11ab60"
+          "0x9EF1363f109e1e4D5cC3894357f144406f1804D5",
+          "0x852096024A7d400aB0119ef73AAE02aDAeC5E564",
+          "0xD6BB3a8bef8917668f940Fe4D48376E088cD9502",
+          "0x67F464C8c3F971AebeD01a0Cf10d2F4bA68A8530",
+          "0xbFD9Dc0d7050d1B41f5E75AB2aE24f8b28939DFB",
+          "0x767f02881891453218f4144EbFd2F39b5C8d3B59"
         ]
       },
       trigger: {
@@ -63,7 +63,7 @@ async function main() {
     {},
     safeAddress
   );
-  const txServiceUrl = "https://safe-transaction-sepolia.safe.global";
+  const txServiceUrl = "https://transaction.safe.reya.network";
   const service = new SafeApiKit({ txServiceUrl, ethAdapter: ethAdapter });
 
   const safeTransactionData: MetaTransactionData = {
