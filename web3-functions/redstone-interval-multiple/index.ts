@@ -87,7 +87,7 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
   } else {
     return {
       canExec: false,
-      message: "No CallDAta to return"
+      message: "No CallData to return"
     };
   }
 });
