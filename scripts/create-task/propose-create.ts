@@ -42,7 +42,7 @@ async function main() {
 
   const { taskId, tx } = await automate.prepareBatchExecTask(
     {
-      name: "Web3Function - Reya Multiple",
+      name: "Redstone Price Feeds",
       web3FunctionHash: cid,
       web3FunctionArgs: {
         priceFeeds: ["ETH", "BTC", "WBTC", "USDC", "USDT", "DAI"],
