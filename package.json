@@ -20,7 +20,8 @@
     "w3f-interval:deploy": "npx w3f deploy web3-functions/redstone-interval/index.ts",
     "w3f-relay:deploy": "npx w3f deploy web3-functions/redstone-relay/index.ts",
     "w3f-relay-interval:deploy": "npx w3f deploy web3-functions/redstone-relay-interval/index.ts",
-    "w3f:test": "npx w3f test web3-functions/redstone-relay/index.ts --logs --chain-id=YOUR CHAIN ID"
+    "w3f:test": "npx w3f test web3-functions/redstone-relay/index.ts --logs --chain-id=YOUR CHAIN ID",
+    "create-task:propose": "npx hardhat run ./scripts/create-task/propose-create.ts"
   },
   "license": "ISC",
   "devDependencies": {
