@@ -38,7 +38,7 @@ async function main() {
   const chainId = (await ethers.provider.getNetwork()).chainId;
 
   const automate = new AutomateSDK(chainId, deployer);
-  const cid = "QmZ3qp2KR43NTzvqcLYzEDajspP2rUzJq9FuFvD3LLDR99";
+  const cid = "QmReeJNQUJXkFUuxTMs5ZrY7km121YgmnRRsDaCc3UsJs5";
 
   const { taskId, tx } = await automate.prepareBatchExecTask(
     {
